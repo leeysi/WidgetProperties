@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--LinearLayout에 margin을 설정해주면 레이아웃 모두에 적용됨-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼 1"
+        android:textSize="30sp"
+        android:padding="15dp"
+        android:layout_margin="25dp"
+        android:background="#cad6fb91"
+        android:textColor="#626262"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여긴 텍스트뷰입니다."
+        android:layout_margin="25dp"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#46559a"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="234dp"
+        android:text="버튼 2"
+        android:textSize="30sp"
+        android:layout_margin="25dp"
+        android:background="#5abd9ff7"
+        android:textColor="#626262"
+        />
+
+</LinearLayout>

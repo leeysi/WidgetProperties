@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yeseul.kr.hs.emirim.widgetproperties.MainActivity"
+    android:orientation="vertical">
+    <!--orientation 값을 설정해주지 않으면 위젯들이 가로로 배치됨-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_str1"
+        android:textSize="20sp"
+        android:background="#ffdddd"
+        android:textColor="#626262"
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"
+        />
+    <!--padding : 디폴트 형태는 네 방향 모두 여백이 생김-->
+    <!--visible은 위젯이 보이게 하는 속성이기 때문에 생략 가능함-->
+
+    <!--위젯이 여러개일 경우 orientation을 설정해줘야 함(8번줄)-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_str1"
+        android:textSize="20sp"
+        android:background="#ffdddd"
+        android:textColor="#626262"
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        />
+    <!--invisible은 자리는 차지하지만 보이지 않음
+    gone은 위젯이 자리 차지마저 하지 않도록 보이지 않게 해줌-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_str1"
+        android:textSize="20sp"
+        android:background="#ffdddd"
+        android:textColor="#626262"
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        />
+    <!--enabled : 위젯의 동작 여부 (false가 비활성화)
+        clickable : 클릭이나 터치가 가능하도록 함
+        rotation : 위젯을 회전시켜서 출력시킴 (값은 각도로 지정함)-->
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text1"
+        android:textSize="30sp"
+        />
+    <!--textview는 자식객체가 없기 때문에 />로 닫아줌-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text2"
+        android:textSize="20sp"
+        android:textColor="#ff8282"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text3"
+        android:textSize="20sp"
+        android:typeface="serif"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text4"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        />
+    <!--속성은 한 요소 안에 한 번만 쓸 수 있음-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text5"
+        android:textSize="30sp"
+        android:singleLine="true"
+        />
+    <!--singleLine은 긴 문장을 생략해줌-->
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/but_str1"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/but_str1"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        />
+    <!--editable은 향후 없어질 가능성이 있는 속성(줄이 그어져 있음)-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/but_str1"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:clickable="false"
+        android:rotation="60"
+        />
+    <!--clickable : 따로 설정해주지 않으면 기본형은 true-->
+
+</LinearLayout>
+    <!--enabled : 위젯의 동작 여부 (false가 비활성화)
+        clickable : 클릭이나 터치가 가능하도록 함
+        rotation : 위젯을 회전시켜서 출력시킴 (값은 각도로 지정함)-->
